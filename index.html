@@ -1,0 +1,144 @@
+[cite_start][cite: 1]
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sloet Games - Verificación</title>
+    <link href="https://fonts.googleapis.com/css2?family=Segoe+UI:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="header-content">
+            <img src="sgames.png" alt="Logo" class="logo-img">
+            <div class="header-text">
+                <h1>Sloet Games</h1>
+                <p>Solicitar Verificación</p>
+            </div>
+        </div>
+    [cite_start]</header> [cite: 69]
+
+    <div class="main-container">
+        
+        <form id="verification-form" enctype="multipart/form-data">
+            
+            <input type="hidden" name="_subject" value="Nueva Solicitud de Verificación - Sloet Games">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_template" value="table">
+
+            [cite_start]<div class="row-grid"> [cite: 70]
+                <div>
+                    <label>Nombre o Apodo</label>
+                    <input type="text" name="nombre" placeholder="Nombre" required>
+                </div>
+                <div>
+                    <label>Fecha de Nacimiento</label>
+                    [cite_start]<input type="text" name="nacimiento" placeholder="00/00/0000" onfocus="(this.type='date')" onblur="if(!this.value)this.type='text'" required> [cite: 71]
+                </div>
+            </div>
+
+            <label>Tu Email</label>
+            [cite_start]<input type="email" name="email" placeholder="@gmail.com" required> [cite: 72]
+
+            <label>Donde creas contenido</label>
+            <select name="plataforma" required>
+                <option value="" disabled selected>Opciones</option>
+                <option value="youtube">YouTube</option>
+                <option value="tiktok">TikTok</option>
+                <option value="discord">Discord</option>
+                [cite_start]<option value="instagram">Instagram</option> [cite: 73]
+            </select>
+
+            <div class="row-grid">
+                <div>
+                    <label>Nombre de Usuario</label>
+                    [cite_start]<input type="text" name="usuario" placeholder="@Usuario" required> [cite: 74]
+                </div>
+                <div>
+                    <label>URL del Perfil</label>
+                    <input type="text" name="url" placeholder="https://..." required>
+                </div>
+            [cite_start]</div> [cite: 75]
+
+            <label>Añade imágenes de tu perfil (Opcional)</label>
+            <div class="upload-wrapper">
+                <div class="upload-container" id="upload-box">
+                    <img id="img-preview" src="" alt="Vista previa">
+                    [cite_start]<input type="file" name="attachment" class="file-input" accept="image/png, image/jpeg, image/jpg"> [cite: 76]
+                    <i class="fa-solid fa-plus" id="upload-icon"></i>
+                </div>
+                [cite_start]<p id="file-feedback" style="display:none;"></p> [cite: 77]
+            </div>
+
+            <label style="margin-bottom: 10px;">Aceptación de las condiciones</label>
+            <div class="terms-box">
+                <input type="checkbox" id="terms" required>
+                <label for="terms" class="legal-text">
+                    Al enviar la solicitud, acepto los Términos del servicio y la 
+                    [cite_start]<span class="legal-link" onclick="openModal()">Política de Privacidad</span> de Sloet Games. [cite: 78]
+                </label>
+            </div>
+
+            <button type="submit" class="btn-submit" id="submit-btn">Enviar</button>
+        </form>
+
+        [cite_start]<div id="success-screen"> [cite: 79]
+            
+            <div class="check-circle">
+                <i class="fa-solid fa-check"></i>
+            </div>
+
+            <h2 class="success-title">Solicitud Enviada</h2>
+            <p class="success-desc">
+                Gracias por ser parte de nuestra comunidad. Nuestro equipo revisará 
+                [cite_start]tu solicitud, este proceso puede tardar entre 24 y 48 horas. [cite: 80]
+            </p>
+
+            <div class="social-section">
+                <div class="section-header">
+                    <i class="fa-regular fa-circle-check"></i> Nuestras redes
+                </div>
+                <div class="icons-row">
+                    [cite_start]<a href="#" class="icon-box"><i class="fa-brands fa-discord"></i></a> [cite: 82]
+                    <a href="#" class="icon-box"><i class="fa-brands fa-tiktok"></i></a>
+                    <a href="#" class="icon-box"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="#" class="icon-box"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            [cite_start]</div> [cite: 83]
+
+            <div class="social-section">
+                <div class="section-header">
+                    <i class="fa-regular fa-circle-check"></i> Nuestros correos Oficiales
+                </div>
+                <div class="email-list">
+                    [cite_start]<p><i class="fa-solid fa-envelope"></i> sloetgames@gmail.com</p> [cite: 84]
+                    <p><i class="fa-solid fa-envelope"></i> realdrivemultiplayer@gmail.com</p>
+                </div>
+            </div>
+
+            <button class="btn-submit" onclick="location.reload()">Volver</button>
+
+        </div>
+
+    </div>
+
+    [cite_start]<div id="privacy-modal" class="modal-overlay"> [cite: 85]
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeModal()">&times;</span>
+            <div class="modal-title">Política de Privacidad</div>
+            <div class="modal-body">
+                <p><strong>1. [cite_start]Recopilación de Información:</strong> Recopilamos información que nos proporcionas directamente al registrarte, como tu nombre, correo electrónico y enlaces a redes sociales.</p> [cite: 86]
+                <p><strong>2. [cite_start]Uso de la Información:</strong> Utilizamos tu información para verificar tu identidad y gestionar tu solicitud de verificación en Sloet Games.</p> [cite: 87]
+                <p><strong>3. [cite_start]Protección de Datos:</strong> Tomamos medidas de seguridad razonables para proteger tu información contra acceso no autorizado.</p> [cite: 88]
+                <p><strong>4. [cite_start]Compartir Información:</strong> No vendemos ni compartimos tu información personal con terceros, salvo que sea necesario para cumplir con la ley.</p> [cite: 89]
+                <p><strong>5. [cite_start]Contacto:</strong> Si tienes dudas sobre nuestra política, contáctanos a sloetgames@gmail.com.</p> [cite: 90]
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
