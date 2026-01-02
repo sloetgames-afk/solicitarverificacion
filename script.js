@@ -62,7 +62,7 @@ form.addEventListener('submit', function(e) {
 
     const formData = new FormData(form);
 
-    // Usando el correo especificado en tu archivo
+    // Usando el correo especificado
     fetch("https://formsubmit.co/ajax/verificacionsloetgames@gmail.com", {
         method: "POST",
         body: formData
