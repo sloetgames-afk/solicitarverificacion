@@ -79,7 +79,8 @@ input[type="date"],
 select {
     width: 100%;
     padding: 15px;
-    background-color: #ffffff; /* Input Blanco como en la imagen */
+    background-color: #ffffff;
+    /* Input Blanco como en la imagen */
     border: none;
     border-radius: 8px;
     font-size: 16px;
@@ -168,7 +169,8 @@ input::placeholder {
     width: 20px;
     height: 20px;
     margin-top: 2px;
-    accent-color: #ffffff; /* Check blanco en navegadores modernos */
+    accent-color: #ffffff;
+    /* Check blanco en navegadores modernos */
     cursor: pointer;
     border: 1px solid #fff;
 }
@@ -224,7 +226,8 @@ input::placeholder {
 @keyframes fadeIn {
     from { opacity: 0;
     transform: translateY(10px); }
-    to { opacity: 1; transform: translateY(0);
+    to { opacity: 1;
+    transform: translateY(0);
     }
 }
 
@@ -242,7 +245,8 @@ input::placeholder {
 
 .check-circle i {
     font-size: 50px;
-    color: #00C853; /* Check verde */
+    color: #00C853;
+    /* Check verde */
 }
 
 .success-title {
